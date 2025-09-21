@@ -10,7 +10,9 @@ from flask_cors import CORS
 
 # ---------------- CONFIG ---------------- #
 
-
+import os
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+ORS_API_KEY = os.getenv("ORS_API_KEY")
 gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:3000"])
