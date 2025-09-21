@@ -15,7 +15,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 ORS_API_KEY = os.getenv("ORS_API_KEY")
 gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
+CORS(app, origins=["https://sns-khaki.vercel.app/"])
 
 # ---------------- HELPERS ---------------- #
 def get_current_location():
