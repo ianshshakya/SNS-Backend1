@@ -9,8 +9,7 @@ import openrouteservice
 from flask_cors import CORS
 
 # ---------------- CONFIG ---------------- #
-GOOGLE_API_KEY = "AIzaSyAF09rLogqed3O0P-CGf3I2Sz0x_9F9R_4"
-ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImNhODJjOWI3YzQwMjQ3YzM5M2FkMWU2YmMwOWUwYmNhIiwiaCI6Im11cm11cjY0In0="
+
 
 gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 app = Flask(__name__)
